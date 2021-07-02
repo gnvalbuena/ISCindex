@@ -24,8 +24,8 @@ stemcellindex <- function(gextable, organism, geneid){
         genelist.sci <- list(RSC = unique(RSCgenetable$hsapiens_homolog_ensembl_gene[RSCgenetable$hsapiens_homolog_ensembl_gene != ""]),
                              CBC = unique(CBCgenetable$hsapiens_homolog_ensembl_gene[CBCgenetable$hsapiens_homolog_ensembl_gene != ""]))
       } else if(geneid == "genename"){
-        genelist.sci <- list(RSC = unique(RSCgenetable$external_gene_name[RSCgenetable$external_gene_name != ""]),
-                             CBC = unique(CBCgenetable$external_gene_name[CBCgenetable$external_gene_name != ""]))
+        genelist.sci <- list(RSC = unique(RSCgenetable$hsapiens_homolog_associated_gene_name[RSCgenetable$hsapiens_homolog_associated_gene_name != ""]),
+                             CBC = unique(CBCgenetable$hsapiens_homolog_associated_gene_name[CBCgenetable$hsapiens_homolog_associated_gene_name != ""]))
       }
   }
 
