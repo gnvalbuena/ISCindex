@@ -4,7 +4,7 @@
 
 The **ISCindex** R package provides a function to calculate an intestinal stem cell index describing stem cell behaviour (?) along a continuum from more conventional Crypt Base Columnar stem cell (CBC) to Regenerative Stem Cell (RSC). 
 
-If you use *ISCindex* in your work, please cite the following paper:
+If you use **ISCindex** in your work, please cite the following paper:
 
 [Citation here]
 
