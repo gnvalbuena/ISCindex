@@ -10,7 +10,7 @@ If you use **ISCindex** in your work, please cite the following paper:
 
 ## Installation
 
-The package can be installed in R by running the following code:
+The package can be installed in R by entering the following commands:
 
 ```r
 if (!requireNamespace("devtools", quietly = TRUE))
