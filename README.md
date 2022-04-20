@@ -37,4 +37,4 @@ The function will return a data frame containing
 
 Access the manual for the `stemcellindex` function by entering `?stemcellindex`
 
-## Help
+
