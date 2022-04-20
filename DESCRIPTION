@@ -1,5 +1,5 @@
 Package: ISCindex
-Title: What the Package Does (One Line, Title Case)
+Title: An R package to calculate an intestinal stem cell index from gene expression profiling data
 Version: 0.0.0.9
 Authors@R: 
     person(given = "Gabriel",
@@ -8,8 +8,7 @@ Authors@R:
            email = "gabriel.valbuena@well.ox.ac.uk",
            comment = c(ORCID = "0000-0001-6825-7214"))
 Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
