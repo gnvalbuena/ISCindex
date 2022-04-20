@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "gabriel.valbuena@well.ox.ac.uk",
            comment = c(ORCID = "0000-0001-6825-7214"))
-Description: What the package does (one paragraph).
+Description: The ISCindex R package provides a function to calculate an intestinal stem cell index describing stem cell phenotype along a continuum from a more conventional Crypt Base Columnar stem cell (CBC) to a Regenerative Stem Cell (RSC) phenotype.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
