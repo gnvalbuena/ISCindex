@@ -4,6 +4,10 @@
 
 The **ISCindex** R package provides a function to calculate an intestinal stem cell index describing stem cell phenotype along a continuum from a more conventional Crypt Base Columnar stem cell (CBC) to a Regenerative Stem Cell (RSC) phenotype. 
 
+If you use **ISCindex** in your work, please cite the following paper:
+
+Gil Vazquez *et al*. *Dynamic and adaptive cancer stem cell population admixture in colorectal neoplasia*. Cell Stem Cell, Volume 29, Issue 8, 1213 - 1228.e8
+
 ## Installation
 
 The package can be installed in R by entering the following commands:
