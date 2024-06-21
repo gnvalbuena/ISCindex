@@ -18,6 +18,8 @@ if (!requireNamespace("devtools", quietly = TRUE))
 devtools::install_github("gnvalbuena/ISCindex")
 ```
 
+UPDATE: This version has been updated for functions to conform with backend changes in the `GSVA` package from version `1.52.3`. There are no changes to how the package function is used.
+
 ## Usage
 
 To calculate the stem cell index, use
