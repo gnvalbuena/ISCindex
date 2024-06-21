@@ -6,11 +6,10 @@
 #' @param gextable Table of gene expression data, with genes in rows and samples in columns.
 #' @param organism Organism of source data, either "mouse" or "human"
 #' @param geneid Type of gene ID in row names, either "ensembl" for Ensembl Gene IDs or "genename" for Gene Names
-#' @param parallel.cores Number of processors to use when doing the calculations in parallel. Will load the *parallel* library if `parallel.cores` is > 1. Default value is 1.
 #' @return A data frame containing RSC scores, CBC scores, and Stem Cell Index
 #'
 #' @export
-stemcellindex <- function(gextable, organism, geneid, kcdf = "Gaussian", parallel.cores = 1){
+stemcellindex <- function(gextable, organism, geneid, kcdf = "Gaussian"){
 
   if(organism == "mouse"){
       if(geneid == "ensembl"){
@@ -30,9 +29,12 @@ stemcellindex <- function(gextable, organism, geneid, kcdf = "Gaussian", paralle
       }
   }
 
-  if(parallel.cores > 1){library(parallel)}
+  paramObject <- gsvaParam(exprData = as.matrix(gextable),
+                           geneSets = genelist.sci,
+                           kcdf = kcdf,
+                           maxDiff=TRUE)
 
-  scorestable <- as.data.frame(t(GSVA::gsva(as.matrix(gextable), genelist.sci, kcdf = kcdf, mx.diff=TRUE, verbose=FALSE, parallel.sz=parallel.cores)))
+  scorestable <- as.data.frame(t(GSVA:gsva(paramObject, verbose = FALSE, BPPARAM = SerialParam(progressbar = verbose))))
 
   scorestable$stemcellindex <- scorestable$RSC - scorestable$CBC
 

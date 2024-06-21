@@ -4,13 +4,7 @@
 \alias{stemcellindex}
 \title{Calculate the Intestinal Stem Cell Index}
 \usage{
-stemcellindex(
-  gextable,
-  organism,
-  geneid,
-  kcdf = "Gaussian",
-  parallel.cores = 1
-)
+stemcellindex(gextable, organism, geneid, kcdf = "Gaussian")
 }
 \arguments{
 \item{gextable}{Table of gene expression data, with genes in rows and samples in columns.}
@@ -18,8 +12,6 @@ stemcellindex(
 \item{organism}{Organism of source data, either "mouse" or "human"}
 
 \item{geneid}{Type of gene ID in row names, either "ensembl" for Ensembl Gene IDs or "genename" for Gene Names}
-
-\item{parallel.cores}{Number of processors to use when doing the calculations in parallel. Will load the \emph{parallel} library if \code{parallel.cores} is > 1. Default value is 1.}
 }
 \value{
 A data frame containing RSC scores, CBC scores, and Stem Cell Index

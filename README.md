@@ -6,7 +6,7 @@ The **ISCindex** R package provides a function to calculate an intestinal stem c
 
 If you use **ISCindex** in your work, please cite the following paper:
 
-[Citation pending]
+Gil Vazquez *et al*. *Dynamic and adaptive cancer stem cell population admixture in colorectal neoplasia*. Cell Stem Cell, Volume 29, Issue 8, 1213 - 1228.e8
 
 ## Installation
 
