@@ -29,12 +29,14 @@ stemcellindex <- function(gextable, organism, geneid, kcdf = "Gaussian"){
       }
   }
 
-  paramObject <- gsvaParam(exprData = as.matrix(gextable),
+  paramObject <- GSVA::gsvaParam(exprData = as.matrix(gextable),
                            geneSets = genelist.sci,
                            kcdf = kcdf,
                            maxDiff=TRUE)
 
-  scorestable <- as.data.frame(t(GSVA:gsva(paramObject, verbose = FALSE, BPPARAM = SerialParam(progressbar = verbose))))
+  scorestable <- as.data.frame(t(GSVA::gsva(paramObject,
+                                            verbose = FALSE,
+                                            BPPARAM = BiocParallel::SerialParam(progressbar = TRUE))))
 
   scorestable$stemcellindex <- scorestable$RSC - scorestable$CBC
 

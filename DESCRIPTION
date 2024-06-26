@@ -1,6 +1,6 @@
 Package: ISCindex
 Title: An R package to calculate an intestinal stem cell index from gene expression profiling data
-Version: 0.0.0.9
+Version: 1.1.0
 Authors@R: 
     person(given = "Gabriel",
            family = "Valbuena",
@@ -17,4 +17,5 @@ Depends:
     R (>= 3.5.0)
 biocViews:
 Imports:
-	GSVA (>= 1.52.3)
+  BiocParallel (>= 1.30.0),
+  GSVA (>= 1.52.3)
