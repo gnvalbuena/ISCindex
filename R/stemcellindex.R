@@ -35,8 +35,7 @@ stemcellindex <- function(gextable, organism, geneid, kcdf = "Gaussian"){
                            maxDiff=TRUE)
 
   scorestable <- as.data.frame(t(GSVA::gsva(paramObject,
-                                            verbose = FALSE,
-                                            BPPARAM = BiocParallel::SerialParam(progressbar = TRUE))))
+                                            verbose = FALSE)))
 
   scorestable$stemcellindex <- scorestable$RSC - scorestable$CBC
 
